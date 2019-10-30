@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Feral cats : AI Identification</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../static/images/unimelb.ico"/>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link href="../static/css/slick.css" rel="stylesheet">
+    <!-- Gallery Lightbox -->
+    <link href="../static/css/magnific-popup.css" rel="stylesheet">
+    <!-- Theme color -->
+    <link id="switcher" href="../static/css/theme-color/default-theme.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="../static/css/style.css" rel="stylesheet">
+    <!-- Open Sans for body font -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+    <!-- Poppins for Title -->
+  	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+ 
+  </head>
+  <body>
+  	
+  	<!-- Start Header -->
+	<header id="mu-header" class="" role="banner">
+		<div class="container">
+			<nav class="navbar navbar-default mu-navbar">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+
+		      <!-- Text Logo -->
+		      <a class="navbar-brand" href="#">Feral cats</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      	<ul class="nav navbar-nav mu-menu navbar-right">
+			        <li><a href="#">HOME</a></li>
+			        <li><a href="#mu-about">ABOUT PROJECT</a></li>
+			        <li><a href="#mu-service">RESULTS</a></li>
+		            <li><a href="{{ url_for('demo') }}">DEMO</a></li>
+		      	</ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<!-- Start Featured Slider -->
+
+	<section id="mu-featured-slider">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="mu-featured-area">
+						<h1> &nbsp;</h1>
+						<h1> &nbsp;</h1>
+						<h2> &nbsp;</h2>
+						<h2> &nbsp;</h2>
+						<!-- Start text slide -->
+						<div class="mu-featured-slider-wrapper">
+							<div class="mu-featured-slider" id="typed-strings">
+								<p>Recognize cats<span> automatically</span></p>
+								<p>Recognize cats<span> precisely</span></p>
+							</div>
+							<span id="typed"></span>
+						</div>
+						<!-- Start text slide -->
+						<div class="mu-featured-content">
+                            <a href="{{ url_for('demo') }}" class="mu-primary-btn view-my-work-btn">Demo</a>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</section>
+	
+	<!-- Start Featured Slider -->
+	
+	<!-- Start main content -->
+		
+	<main role="main">
+
+		<!-- Start About -->
+		<section id="mu-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-about-area">
+
+							<div class="mu-about-header">
+								<h2 class="mu-heading-title">ABOUT THIS PROJECT</h2>
+								<span class="mu-header-dot"></span>
+								<p><br></p>
+								<p>Australia has had more most mammal extinctions in the last 200 years, which is mainly caused 
+								 by predation of </p> <p>feral cats. It is important to better <strong>understand feral cat density </strong>to manage them effectively. </p>
+								 <p><br></p>
+								<p>Since identifying individual feral car by sight is extremely time-consuming and tedious, 
+								our project aims to </p><p><strong>build a deep leaning model </strong>to help identify individual cat automatically. We compared different obeject detection</p>
+								<p>  models with the final chocie of <i><strong>Mask R-CNN </strong></i> with ImageNet pre-trained weights on Resnet-50 network</p>
+								<p><br></p>
+							</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End About Us Content -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About -->
+
+		<!-- Start Service -->
+		<section id="mu-service">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mu-service-area">
+
+							<div class="mu-service-header">
+								<h2 class="mu-heading-title">RESULTS</h2>
+								<span class="mu-header-dot"></span>
+								<p>The training results shows below</p>
+                                <img src="../static/images/result1.png" style="width: 600px; height: 400px">
+                                <p>Figure 1: The result of mAP@0.5IoU value of each dataset</p>
+                                <img src="../static/images/result2.png" style="width: 600px; height: 300px">
+                                <p>Figure 2: The result of mAP@0.5IoU value of each cat in otway forest</p>
+                                <img src="../static/images/result3.png" style="width: 600px; height: 400px">
+                                <p>Figure 3: The result of mAP@0.5IoU value of each cat in other four forests</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Service -->
+
+		
+	</main>
+	
+	<!-- End main content -->	
+			
+			
+	<!-- Start footer -->
+	<footer id="mu-footer" role="contentinfo">
+			<div class="container">
+				<div class="mu-footer-area">
+					<p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="#">The University of Melbourne</a>. All right reserved.</p>
+				</div>
+			</div>
+
+	</footer>
+	<!-- End footer -->
+
+	
+	
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="../static/js/bootstrap.min.js"></script>
+	<!-- Slick slider -->
+    <script type="text/javascript" src="../static/js/slick.min.js"></script>
+    <!-- Filterable Gallery js -->
+    <script type="text/javascript" src="../static/js/jquery.filterizr.min.js"></script>
+    <!-- Gallery Lightbox -->
+    <script type="text/javascript" src="../static/js/jquery.magnific-popup.min.js"></script>
+    <!-- Ajax contact form  -->
+    <script type="text/javascript" src="../static/js/app.js"></script>
+	<!-- Featured Slider -->
+    <script type="text/javascript" src="../static/js/typed.min.js"></script>
+    <!-- On scroll JS  -->
+    <script src="../static/js/jquery.appear.js"></script>
+	<!-- Progress Bar -->
+    <script type="text/javascript" src="../static/js/jquery.lineProgressbar.js"></script>
+    
+	
+    <!-- Custom js -->
+	<script type="text/javascript" src="../static/js/custom.js"></script>
+	
+	
+    
+  </body>
+</html>
