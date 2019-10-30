@@ -1,0 +1,66 @@
+#oldpwd {
+	width: 260px;
+	height: 30px;
+}
+ 
+#wrongpwd {
+	color: red;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	float: middle;
+	margin-left: 100px;
+}
+ 
+#newpwd1 {
+	margin: 15px 30px 15px 30px;
+	width: 260px;
+	height: 30px;
+}
+ 
+#newpwd2 {
+	margin: 15px 30px 15px 30px;
+	width: 260px;
+	height: 30px;
+}
+ 
+#edit {
+	font-size: 25px;
+	width: 110px;
+	height: 35px;
+	background-color: red;
+	color: white;
+	border-radius: 10px;
+	border: 0px;
+	font-family: 黑体;
+	margin-right: 15px;
+}
+ 
+#cancel {
+	font-size: 25px;
+	width: 110px;
+	height: 35px;
+	background-color: #666666;
+	color: white;
+	border-radius: 10px;
+	border: 0px;
+	font-family: 黑体;
+	margin-right: 15px;
+}
+ 
+#pwd1 {
+	margin: 15px 60px 0px 60px;
+}
+ 
+#pwd2 {
+	margin: 0px 60px 15px 60px;
+}
+ 
+#pwd3 {
+	margin: 15px 60px 15px 60px;
+}
+ 
+#pwd4 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
